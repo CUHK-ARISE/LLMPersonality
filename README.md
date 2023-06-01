@@ -5,7 +5,7 @@ Empirical Study on Personalities of Large Language Models
 Raw data of all experiments are listed in the file.
 
 ## References
-For more details, please refer to [this paper](https://arxiv.org/abs/). Please remember to cite us if you find our work helpful in your work!
+For more details, please refer to [this paper](https://arxiv.org/abs/2305.19926). Please remember to cite us if you find our work helpful in your work!
 ```
 @article{huang2023chatgpt,
   author    = {Jen{-}tse Huang and
@@ -15,7 +15,7 @@ For more details, please refer to [this paper](https://arxiv.org/abs/). Please r
                Wenxiang Jiao and
                Michael R. Lyu},
   title     = {Chat{GPT} and {ENFJ}, Bard an {ISTJ}: Empirical Study on Personalities of Large Language Models},
-  journal   = {arXiv preprint arXiv:},
+  journal   = {arXiv preprint arXiv:2305.19926},
   year      = {2023}
 }
 ```
