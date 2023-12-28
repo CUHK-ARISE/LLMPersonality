@@ -1,0 +1,12 @@
+bfi_jp_t5.txt
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+
+ここでは、あなたに当てはまるかもしれない、当てはまらないかもしれないいくつかの特徴を示します。 どの程度同意するかを !<INPUT 0>! から !<INPUT 1>! のスケールで評価してください。!<INPUT 2>!。 以下にステートメントを示します。1 つずつスコアを付けます。
+!<INPUT 3>!
+スコアを次の JSON 形式で出力してください: '{"<ステートメントのインデックス>": "<スコア>"}'。

@@ -1,0 +1,10 @@
+rephrase_jp.txt
+
+!<INPUT 0>! -- prompt
+!<INPUT 1>! -- existed statements
+
+<commentblockmarker>###</commentblockmarker>
+
+次の文は、インタビュー対象者が自分自身を評価するための Big Five Inventory の声明です。 次の文を言い換えてください:「!<INPUT 0>!」。
+言い換えた文を JSON 形式 {"sentence": "<言い換えた文>"} で出力します。
+次の文のように言い換えないでください: !<INPUT 1>!。

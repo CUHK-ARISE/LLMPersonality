@@ -1,0 +1,13 @@
+bfi_ko_t3.txt
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+
+귀하의 다음 진술을 고려하면:
+!<INPUT 3>!
+이 진술이 귀하를 얼마나 정확하게 설명하는지 확인하려면 다음 옵션 중에서 선택하십시오. !<INPUT 2>!.
+다음 JSON 형식으로 점수를 출력해 주세요. '{"<명세서 색인>": "<점수>"}'.

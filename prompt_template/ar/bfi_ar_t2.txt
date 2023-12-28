@@ -1,0 +1,13 @@
+bfi_ar_t2.txt
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+
+الآن سأصف بإيجاز بعض الأشخاص. من فضلك اقرأ كل وصف وأخبرني عن مدى إعجاب كل شخص بك. اكتب إجابتك باستخدام المقياس التالي: !<INPUT 2>!.
+يرجى الإجابة على البيان، حتى لو لم تكن متأكدا تماما من إجابتك.
+!<INPUT 3>!
+يرجى إخراج درجاتك بتنسيق JSON التالي: '{"<مؤشر البيان>": "<نتيجة>"}'.

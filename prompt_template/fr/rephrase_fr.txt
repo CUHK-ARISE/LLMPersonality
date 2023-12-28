@@ -1,0 +1,10 @@
+rephrase_fr.txt
+
+!<INPUT 0>! -- prompt
+!<INPUT 1>! -- existed statements
+
+<commentblockmarker>###</commentblockmarker>
+
+La phrase suivante est une déclaration de Big Five Inventory permettant aux personnes interrogées de s'évaluer elles-mêmes. Veuillez reformuler la phrase suivante : "!<INPUT 0>!".
+Affichez les phrases reformulées au format JSON suivant : {"sentence": "<la phrase reformulée>"}.
+Ne reformulez pas la ou les phrases suivantes : !<INPUT 1>!.

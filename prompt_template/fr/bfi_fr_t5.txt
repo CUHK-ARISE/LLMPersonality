@@ -1,0 +1,11 @@
+bfi_fr_t5.txt
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+Voici un certain nombre de caractéristiques qui peuvent ou non s'appliquer à vous. Veuillez évaluer dans quelle mesure vous êtes d'accord sur une échelle de !<INPUT 0>! à !<INPUT 1>!. !<INPUT 2>!. Voici les énoncés, notez-les un par un :
+!<INPUT 3>!
+Veuillez afficher votre score au format JSON suivant : '{"<index d'instruction>": "<score>"}'.

@@ -1,0 +1,13 @@
+bfi_it_t3.txt
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+
+Date le seguenti dichiarazioni da parte tua:
+!<INPUT 3>!
+Scegli tra le seguenti opzioni per identificare quanto accuratamente questa affermazione ti descrive. !<INPUT 2>!.
+Emetti il tuo punteggio nel seguente formato JSON: '{"<indice istruzione>": "<punteggio>"}'.

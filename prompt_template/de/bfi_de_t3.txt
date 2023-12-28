@@ -1,0 +1,13 @@
+bfi_de_t3.txt
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+
+Angesichts der folgenden Aussagen von Ihnen:
+!<INPUT 3>!
+Bitte wählen Sie eine der folgenden Optionen aus, um herauszufinden, wie genau diese Aussage Sie beschreibt. !<INPUT 2>!.
+Bitte geben Sie Ihre Punktzahl im folgenden JSON-Format aus: '{"<Anweisungsindex>": "<Punktzahl>"}'.

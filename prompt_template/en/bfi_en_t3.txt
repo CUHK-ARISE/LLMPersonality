@@ -1,0 +1,14 @@
+bfi_en_t3.txt
+https://arxiv.org/abs/2206.07550
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+
+Given the following statements of you:
+!<INPUT 3>!
+Please choose from the following options to identify how accurately this statement describes you. !<INPUT 2>!.
+Please output your score in the following JSON format: '{"<statement index>": "<score>"}'.

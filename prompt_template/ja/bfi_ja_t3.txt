@@ -1,0 +1,14 @@
+bfi_jp_t3.txt
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+
+あなたの次のような発言を考慮すると、
+!<INPUT 3>!
+この記述があなたをどの程度正確に表しているかを次のオプションから選択してください。 !<INPUT 2>!。
+スコアを次の JSON 形式で出力してください: '{"<ステートメントのインデックス>": "<スコア>"}'。
+

@@ -1,0 +1,12 @@
+bfi_it_t1.txt
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+
+Puoi rispondere solo da !<INPUT 0>! a !<INPUT 1>! nelle seguenti affermazioni. Ecco alcune caratteristiche che potrebbero applicarsi o meno a te. Si prega di indicare in che misura si è d'accordo o in disaccordo con tale affermazione. !<INPUT 2>!. Ecco le affermazioni, segnale una per una:
+!<INPUT 3>!
+Emetti il tuo punteggio nel seguente formato JSON: '{"<indice istruzione>": "<punteggio>"}'.

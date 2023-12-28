@@ -1,0 +1,13 @@
+bfi_es_t3.txt
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+
+Teniendo en cuenta las siguientes declaraciones suyas:
+!<INPUT 3>!
+Elija entre las siguientes opciones para identificar con qué precisión lo describe esta declaración. !<INPUT 2>!.
+Por favor envíe su puntuación en el siguiente formato JSON: '{"<índice de declaración>": "<puntaje>"}'.

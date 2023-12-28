@@ -1,0 +1,10 @@
+rephrase_en.txt
+
+!<INPUT 0>! -- prompt
+!<INPUT 1>! -- existed statements
+
+<commentblockmarker>###</commentblockmarker>
+
+The following sentence is a statement from Big Five Inventory for interviewees to evaluate themselves. Please rephrase the following sentence: "!<INPUT 0>!".
+Output the rephrased sentences in the following JSON format: {"sentence": "<the rephrased sentence>"}.
+Do not rephrase as the following sentence(s): !<INPUT 1>!. 

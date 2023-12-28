@@ -1,0 +1,12 @@
+bfi_ar_t1.txt
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+
+يمكنك الرد من !<INPUT 0>! إلى !<INPUT 1>! فقط في العبارات التالية. فيما يلي عدد من الخصائص التي قد تنطبق عليك أو لا تنطبق عليك. يرجى الإشارة إلى مدى موافقتك أو عدم موافقتك على هذا البيان. !<INPUT 2>! . فيما يلي العبارات، يرجى تسجيلها واحدة تلو الأخرى:
+!<INPUT 3>!
+يرجى إخراج درجاتك بتنسيق JSON التالي: '{"<مؤشر البيان>": "<نتيجة>"}'.

@@ -1,0 +1,14 @@
+bfi_en_t2.txt
+https://aclanthology.org/2022.nlpcss-1.24.pdf
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+
+Now I will briefly describe some people. Please read each description and tell me how much each person is like you. Write your response using the following scale: !<INPUT 2>!.
+Please answer the statement, even if you are not completely sure of your response.
+!<INPUT 3>!
+Please output your score in the following JSON format: '{"<statement index>": "<score>"}'.

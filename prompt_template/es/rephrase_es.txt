@@ -1,0 +1,10 @@
+rephrase_es.txt
+
+!<INPUT 0>! -- prompt
+!<INPUT 1>! -- existed statements
+
+<commentblockmarker>###</commentblockmarker>
+
+La siguiente oración es una declaración del Big Five Inventory para que los entrevistados se evalúen a sí mismos. Reformule la siguiente oración: "!<INPUT 0>!".
+Genere las oraciones reformuladas en el siguiente formato JSON: {"sentence": "<la oración reformulada>"}.
+No lo reformule como las siguientes oraciones: !<INPUT 1>!.

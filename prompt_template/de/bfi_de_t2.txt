@@ -1,0 +1,13 @@
+bfi_de_t2.txt
+
+!<INPUT 0>! -- scale range min
+!<INPUT 1>! -- scale range max
+!<INPUT 2>! -- level description
+!<INPUT 3>! -- statements
+
+<commentblockmarker>###</commentblockmarker>
+
+Jetzt werde ich einige Leute kurz beschreiben. Bitte lesen Sie jede Beschreibung und sagen Sie mir, wie sehr jede Person Ihnen ähnelt. Schreiben Sie Ihre Antwort mit der folgenden Skala: !<INPUT 2>!.
+Bitte beantworten Sie die Aussage, auch wenn Sie sich Ihrer Antwort nicht ganz sicher sind.
+!<INPUT 3>!
+Bitte geben Sie Ihre Punktzahl im folgenden JSON-Format aus: '{"<Anweisungsindex>": "<Punktzahl>"}'.

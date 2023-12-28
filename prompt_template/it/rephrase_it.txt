@@ -1,0 +1,10 @@
+rephrase_it.txt
+
+!<INPUT 0>! -- prompt
+!<INPUT 1>! -- existed statements
+
+<commentblockmarker>###</commentblockmarker>
+
+La frase seguente è una dichiarazione di Big Five Inventory affinché gli intervistati possano valutare se stessi. Si prega di riformulare le seguenti frasi: "!<INPUT 0>!".
+Genera le frasi riformulate nel seguente formato JSON: {"sentence": "<the rephrased frase>"}.
+Non riformulare la frase seguente: !<INPUT 1>!.

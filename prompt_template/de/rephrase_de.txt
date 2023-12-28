@@ -1,0 +1,10 @@
+rephrase_de.txt
+
+!<INPUT 0>! -- prompt
+!<INPUT 1>! -- existed statements
+
+<commentblockmarker>###</commentblockmarker>
+
+Der folgende Satz ist eine Aussage von Big Five Inventory, damit die Befragten sich selbst bewerten können. Bitte formulieren Sie den folgenden Satz um: "!<INPUT 0>!".
+Geben Sie die umformulierten Sätze im folgenden JSON-Format aus: {"sentence": "<der umformulierte Satz>"}.
+Formulieren Sie den Satz nicht wie folgt um: !<INPUT 1>!.

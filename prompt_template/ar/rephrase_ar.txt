@@ -1,0 +1,10 @@
+rephrase_ar.txt
+
+!<INPUT 0>! -- prompt
+!<INPUT 1>! -- existed statements
+
+<commentblockmarker>###</commentblockmarker>
+
+الجملة التالية عبارة عن بيان من Big Five Inventory للمشاركين في المقابلات لتقييم أنفسهم. الرجاء إعادة صياغة الجمل التالية: "!<INPUT 0>!".
+قم بإخراج الجمل المعاد صياغتها بتنسيق JSON التالي: {"sentence": "<الجملة المعاد صياغتها>"}.
+لا تقم بإعادة صياغة الجملة (الجمل) التالية: !<INPUT 1>!.
