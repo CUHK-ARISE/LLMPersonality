@@ -2,18 +2,11 @@
 Author: LAM Man Ho (mhlam@link.cuhk.edu.hk)
 """
 import random
-import pandas as pd
 import json
 import shutil
 import numpy as np
 from tqdm import tqdm
-from itertools import product
-from statistics import mean, stdev
-import matplotlib.pyplot as plt
-from sklearn.decomposition import PCA
-from sklearn.cluster import DBSCAN
-from sklearn.neighbors import LocalOutlierFactor
-from matplotlib.legend_handler import HandlerPathCollection
+from statistics import mean
 
 from gpt_setting import *
 from global_functions import *
