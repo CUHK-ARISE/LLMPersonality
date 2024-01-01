@@ -1,4 +1,4 @@
-bfi_ar_t3.txt
+bfi_Ar_t3.txt
 
 !<INPUT 0>! -- scale range min
 !<INPUT 1>! -- scale range max

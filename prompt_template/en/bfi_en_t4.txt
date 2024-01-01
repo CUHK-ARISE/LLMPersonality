@@ -1,4 +1,4 @@
-bfi_en_t4.txt
+bfi_En_t4.txt
 
 !<INPUT 0>! -- scale range min
 !<INPUT 1>! -- scale range max

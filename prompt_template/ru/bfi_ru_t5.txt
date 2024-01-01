@@ -1,4 +1,4 @@
-bfi_ru_t5.txt
+bfi_Ru_t5.txt
 
 !<INPUT 0>! -- scale range min
 !<INPUT 1>! -- scale range max

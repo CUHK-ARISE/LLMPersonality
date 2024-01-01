@@ -1,4 +1,4 @@
-bfi_zh_t1.txt
+bfi_Zh_t1.txt
 
 !<INPUT 0>! -- scale range min
 !<INPUT 1>! -- scale range max
