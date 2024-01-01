@@ -32,8 +32,11 @@ Order:
 order = ['r', 'f']
 
 '================================================================================================='
+# rephrase('BFI', 'En')
+
+'================================================================================================='
 questionnaire_name = 'BFI'
-name_exp = 'ko'
+name_exp = 'save'
 
 # Start a server and generate pre-testing cases
 bfi_test = Server(questionnaire_name, template, version, language, label, order, name_exp=name_exp)
@@ -43,4 +46,5 @@ bfi_test = Server(questionnaire_name, template, version, language, label, order,
 
 # Run the pre-testing cases
 bfi_test.run()
+
 '================================================================================================='

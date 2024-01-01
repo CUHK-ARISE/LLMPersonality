@@ -1,4 +1,4 @@
-rephrase_fr.txt
+rephrase_Fr.txt
 
 !<INPUT 0>! -- prompt
 !<INPUT 1>! -- existed statements

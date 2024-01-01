@@ -1,4 +1,4 @@
-rephrase_ko.txt
+rephrase_Ko.txt
 
 !<INPUT 0>! -- prompt
 !<INPUT 1>! -- existed statements

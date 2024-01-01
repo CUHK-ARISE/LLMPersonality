@@ -4,7 +4,6 @@ Author: LAM Man Ho (mhlam@link.cuhk.edu.hk)
 import random
 import json
 import shutil
-import numpy as np
 from tqdm import tqdm
 from statistics import mean
 
@@ -35,6 +34,45 @@ def load(file_path, name_exp=None):
             json.dump(loaded_data, f, indent=2)
     return Server(**loaded_data["meta"], data=loaded_data["data"])
 
+
+'''
+rephrase(): Call GPT to rephrase the original statements.
+'''
+def rephrase(questionnaire_name, language, savename=None):
+    if savename is None:
+        savename = f'rephrased_{language}'
+
+    with open('dataset/questionnaires.json', 'r') as dataset:
+        data = json.load(dataset)
+        questionnaire = data[questionnaire_name]
+        
+    statements = questionnaire["questions"][language]["v1"]["statements"].items()
+    existed_statements = [statement[1] for statement in questionnaire["questions"][language].items() if statement[0].startswith('v')]
+    
+    rephrased = []
+    for count, statement in tqdm(enumerate(statements)):
+        existed_rephrased_statements = [s["statements"][str(count+1)] for s in existed_statements]
+        existed_rephrased_str = '"' + '", "'.join(existed_rephrased_statements) + '"'
+        while True:
+            with open(f'dataset/rephrase_prompt/rephrase_{language}.txt', 'r') as file:
+                _, prompt = file.read().strip().split("<commentblockmarker>###</commentblockmarker>")
+            prompt = prompt.replace('!<INPUT 0>!', statement[1])
+            prompt = prompt.replace('!<INPUT 1>!', existed_rephrased_str)
+            inputs = [
+                {"role": "system", "content": questionnaire["questions"][language]["system_prompt"]},
+                {"role": "user", "content": prompt}
+            ]
+            try:
+                response = chat('gpt-4', inputs).strip()
+                parsered_responses = json.loads(response)
+                parsered_responses = parsered_responses["sentence"]
+                break
+            except:
+                pass
+        rephrased.append(parsered_responses)
+        
+    add_statement(questionnaire_name, language, rephrased)
+        
 
 class Server:
     def __init__(self, questionnaire_name, template, version, language, label, order, name_exp='save', basis=None, pending_tests=None, data=[]):

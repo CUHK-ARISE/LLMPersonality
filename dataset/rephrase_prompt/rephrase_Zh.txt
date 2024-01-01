@@ -1,4 +1,4 @@
-rephrase_zh.txt
+rephrase_Zh.txt
 
 !<INPUT 0>! -- prompt
 !<INPUT 1>! -- existed statements
