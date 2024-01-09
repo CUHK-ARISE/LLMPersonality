@@ -1,7 +1,3 @@
-"""
-Author: LAM Man Ho (mhlam@link.cuhk.edu.hk)
-"""
-
 import os
 import random
 import matplotlib.pyplot as plt

@@ -1,7 +1,3 @@
-"""
-Author: LAM Man Ho (mhlam@link.cuhk.edu.hk)
-"""
-
 import json
 import numpy as np
 import pandas as pd

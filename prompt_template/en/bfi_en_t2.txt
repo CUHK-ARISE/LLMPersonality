@@ -1,5 +1,4 @@
 bfi_En_t2.txt
-https://aclanthology.org/2022.nlpcss-1.24.pdf
 
 !<INPUT 0>! -- scale range min
 !<INPUT 1>! -- scale range max

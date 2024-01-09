@@ -1,5 +1,4 @@
 bfi_En_t3.txt
-https://arxiv.org/abs/2206.07550
 
 !<INPUT 0>! -- scale range min
 !<INPUT 1>! -- scale range max

@@ -1,6 +1,3 @@
-"""
-Author: LAM Man Ho (mhlam@link.cuhk.edu.hk)
-"""
 import json
 
 # Convert number to specified label

@@ -1,6 +1,3 @@
-"""
-Author: LAM Man Ho (mhlam@link.cuhk.edu.hk)
-"""
 import random
 import json
 import shutil
