@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 from sklearn.cluster import DBSCAN
 from sklearn.decomposition import PCA
-from Analysis.tools import *
+from tools import *
 
 class Visualize:
     '''
