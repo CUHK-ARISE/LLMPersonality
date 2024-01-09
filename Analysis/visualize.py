@@ -13,15 +13,15 @@ from tools import *
 class Visualize:
     '''
     Initialize a Visualize object for visualizing data using PCA.
-        qname (dataframe), basis (df)
+        qname (dataframe), reference (df)
     '''
-    def __init__(self, qname, basis):
+    def __init__(self, qname, reference):
         self.data = list()
         self.questionnaire = get_questionnaire(qname)
         dimensions = len(self.questionnaire["scales"])
         self.pca = PCA(n_components=dimensions)
-        # random.shuffle(basis.to_numpy())
-        pca_basis = self.pca.fit_transform(basis)
+        # random.shuffle(reference.to_numpy())
+        pca_basis = self.pca.fit_transform(reference)
         self.basis = {
             "x": pca_basis[:,0],
             "y": pca_basis[:,1],

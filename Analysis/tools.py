@@ -23,26 +23,26 @@ def get_questionnaire(name):
     except FileNotFoundError: raise FileNotFoundError("The 'questionnaires.json' file does not exist.")
 
 '''
-Construct the basis and fit to PCA to extract the projection matrix for dimensional reduction
+Construct the reference and fit to PCA to extract the projection matrix for dimensional reduction
 '''
-def construct_basis(questionnaire_name, savefile, mode='full'):
-    basis = list()
+def construct_reference(questionnaire_name, savefile, mode='full'):
+    reference = list()
     questionnaire = get_questionnaire(questionnaire_name)
     scales = questionnaire["scales"]
     categories = list(questionnaire["categories"].keys())
     combinations = list(product(scales, repeat=len(categories)))
     for item in combinations:
-        basis.append(dict(zip(categories, item)))
+        reference.append(dict(zip(categories, item)))
     with open(savefile, 'w') as f:
-        json.dump(basis, f, indent=4)
+        json.dump(reference, f, indent=4)
         
 '''
-Extract the fitting basis
+Extract the fitting reference
 '''
-def extract_basis(filename):
+def extract_reference(filename):
     with open(filename, 'r') as f:
-        basis = json.load(f)
-    df = pd.DataFrame(basis)
+        reference = json.load(f)
+    df = pd.DataFrame(reference)
     return df
 
 '''
