@@ -75,7 +75,7 @@ def rephrase(questionnaire_name, language, savename=None):
         
 
 class Server:
-    def __init__(self, questionnaire_name, template, version, language, label, order, name_exp='save', basis=None, pending_tests=None, data=[]):
+    def __init__(self, questionnaire_name, template, version, language, label, order, name_exp='save', pending_tests=None, data=[]):
         self.name_exp = name_exp
         self.questionnaire_name = questionnaire_name
         self.template = template
@@ -97,7 +97,7 @@ class Server:
         self.data = data
         self.questionnaire = get_questionnaire(questionnaire_name)
         self.model = model
-        self.basis = basis
+        self.initial_save()
     
     """
     get_scales(): Extract the required scale level information and level description.
@@ -215,9 +215,31 @@ class Server:
         return result_dict
     
     """
-    save(): Save the results in JSON format.
+    initial_save(): Save all pre-testing cases.
     """
-    def save(self, test_info, raw_data, data):
+    def initial_save(self):
+        save_data = {
+            "meta": {
+                "name_exp": self.name_exp,
+                "questionnaire_name": self.questionnaire_name,
+                "template": self.template,
+                "version": self.version,
+                "language": self.language,
+                "label": self.label,
+                "order": self.order,
+                "pending_tests": self.pending_tests
+            }, 
+            "data": []
+        }
+        save_file_path = f'save/{self.name_exp}.json'
+        os.makedirs("save", exist_ok=True)
+        with open(save_file_path, 'w') as json_file:
+            json.dump(save_data, json_file, indent=2)
+    
+    """
+    save_a_case(): Save a test result in JSON format.
+    """
+    def save_a_case(self, test_info, raw_data, data):
         data = {
             "info": {**test_info},
             "raw": raw_data,
@@ -232,20 +254,8 @@ class Server:
                 save_data["data"] += [data]
                 save_data["meta"]["pending_tests"] = self.pending_tests
         except:
-            save_data = {
-                "meta": {
-                    "name_exp": self.name_exp,
-                    "questionnaire_name": self.questionnaire_name,
-                    "template": self.template,
-                    "version": self.version,
-                    "language": self.language,
-                    "label": self.label,
-                    "order": self.order,
-                    "pending_tests": self.pending_tests
-                }, 
-                "data": [data]
-            }
-        
+            pass
+
         with open(save_file_path, 'w') as json_file:
             json.dump(save_data, json_file, indent=2)
         if self.data:
@@ -264,5 +274,5 @@ class Server:
                 data = self.start(test_info)
                 compute_data = self.compute(data)
                 self.pending_tests.remove(test_info)
-                self.save(test_info, data, compute_data)
+                self.save_a_case(test_info, data, compute_data)
                 pbar.update(1)
