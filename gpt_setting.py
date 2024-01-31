@@ -6,6 +6,7 @@ from tenacity import (
 import openai
 import time
 import os
+import re
 import random
 
 from utils import *
@@ -71,13 +72,20 @@ def print_prompt(inputs, response):
     return
 
 def gpt_request(model, inputs):
+    json_format = r'({.*})'
+    
     if model == 'text-davinci-003':
         response = completion(model, inputs).strip()
         print_prompt(inputs, response)
-        return response
+        match = re.search(json_format, response, re.DOTALL)
+        return str(match)
     elif model in ['gpt-3.5-turbo', 'gpt-4']:
         response = chat(model, inputs).strip()
         print_prompt(inputs, response)
-        return response
-    else:
+        match = re.search(json_format, response, re.DOTALL)
+        if match:
+            return match.group(1).strip()
+        else:
+            ""
+        
         raise ValueError("The model is not supported or does not exist.")

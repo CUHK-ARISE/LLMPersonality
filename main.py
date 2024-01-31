@@ -15,7 +15,8 @@ Language:
     En: English, Zh: Simplified Chinese, Ko: Korean, Es: Spanish, Fr: France,
     De: Deutsch, It: Italian, Ar: Arabic, Ru: Russian, Ja: Japanese
 '''
-language = ['Zh', 'Ko', 'Es', 'Fr', 'De', 'It', 'Ar', 'Ru', 'Ja']
+language = ['En', 'Zh', 'Ko', 'Es', 'Fr', 'De', 'It', 'Ar', 'Ru', 'Ja']
+language = ['Zh']
 
 '''
 Label:
@@ -36,13 +37,13 @@ order = ['r', 'f']
 
 '================================================================================================='
 questionnaire_name = 'BFI'
-name_exp = 'save'
+name_exp = 'save_zh'
 
 # Start a server and generate pre-testing cases
 bfi_test = Server(questionnaire_name, template, version, language, label, order, name_exp=name_exp)
 
 # Load and continue a test
-# bfi_test = load('<filename>', '<new-filename>')
+# bfi_test = load('save/save_en.json', 'save_en1')
 
 # Run the pre-testing cases
 bfi_test.run()

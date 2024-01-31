@@ -155,16 +155,14 @@ class Server:
             prompt = get_prompt(f'prompt_template/{language}/{self.questionnaire_name}_{language}_{template}.txt', 
                                 [symbol_min, symbol_max, level_description, statement_str])
             inputs.append({"role": "user", "content": prompt})
-            while True:
-                try:
-                    gpt_responses = gpt_request(self.model, inputs).strip()
-                    parsed_responses = json.loads(gpt_responses)
-                    parsed_responses = [convert_symbol(label, value) for value in parsed_responses.values()]
-                    if order == 'r':
-                        parsed_responses = [scale_max-score+1 for score in parsed_responses]
-                    break
-                except ValueError:
-                    pass
+            try:
+                gpt_responses = gpt_request(self.model, inputs)
+                parsed_responses = json.loads(gpt_responses)
+                parsed_responses = [convert_symbol(label, value) for value in parsed_responses.values()]
+                if order == 'r':
+                    parsed_responses = [scale_max-score+1 for score in parsed_responses]
+            except ValueError:
+                return None
             responses += parsed_responses
             inputs.append({"role": "assistant", "content": gpt_responses})
         return responses
@@ -187,7 +185,11 @@ class Server:
         statement_indices, statement_details, statement_description = self.get_statements(questions, version)
 
         responses = self.start_request(scale_details, level_description, statement_description, questions, **test_case)
-        data = {k: v for k, v in zip(statement_indices, responses)}
+        
+        if responses and len(responses) == len(statement_indices):
+            data = {k: v for k, v in zip(statement_indices, responses)}
+        else:
+            data = self.start(test_case)
         
         return data
 
