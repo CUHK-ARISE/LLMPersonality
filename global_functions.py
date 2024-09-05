@@ -16,14 +16,16 @@ def convert_number(label, number):
 
 # Convert label back to number
 def convert_symbol(label, symbol):
-    if label.startswith('n'):
-        return int(symbol)
-    elif label.startswith('a'):
-        lower_case = True if label.endswith('l') else False
-        return int(alphabet_to_num(symbol))
-    elif label.startswith('r'):
-        lower_case = True if label.endswith('l') else False
-        return int(roman_to_num(symbol))
+    try:
+        if label.startswith('n'):
+            return int(symbol)
+        elif label.startswith('a') and symbol.isalpha():
+            return int(alphabet_to_num(symbol))
+        elif label.startswith('r'):
+            return int(roman_to_num(symbol))
+    except:
+        return None
+
 
 # Convert number to Roman number
 def num_to_roman(num, lower_case=False):
