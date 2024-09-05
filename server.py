@@ -169,8 +169,9 @@ class Server:
                 gpt_responses = llm_request(self.model, inputs)
                 parsed_responses = json.loads(gpt_responses)
                 parsed_responses = [convert_symbol(label, value) for value in parsed_responses.values()]
-                if order == 'r':
-                    parsed_responses = [scale_max-score+1 for score in parsed_responses]
+                
+                if None in parsed_responses: return None
+                if order == 'r': parsed_responses = [scale_max-score+1 for score in parsed_responses]
             
             except:
                 return None
