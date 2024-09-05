@@ -10,4 +10,4 @@ bfi_De_t3.txt
 Angesichts der folgenden Aussagen von Ihnen:
 !<INPUT 3>!
 Bitte wählen Sie eine der folgenden Optionen aus, um herauszufinden, wie genau diese Aussage Sie beschreibt. !<INPUT 2>!.
-Bitte geben Sie Ihre Punktzahl im folgenden JSON-Format aus: '{"<Anweisungsindex>": "<Punktzahl>"}'.
+Bitte geben Sie Ihre Punktzahl im folgenden JSON-Format aus: '{"<Anweisungsindex>": "<Punktzahl>", "<Anweisungsindex>": "<Punktzahl>"}'.

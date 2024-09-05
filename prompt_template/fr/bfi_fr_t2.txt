@@ -10,4 +10,4 @@ bfi_Fr_t2.txt
 Je vais maintenant décrire brièvement certaines personnes. Veuillez lire chaque description et dites-moi à quel point chaque personne vous ressemble. Écrivez votre réponse en utilisant l'échelle suivante : !<INPUT 2>!.
 Veuillez répondre à la déclaration, même si vous n'êtes pas complètement sûr de votre réponse.
 !<INPUT 3>!
-Veuillez afficher votre score au format JSON suivant : '{"<index d'instruction>": "<score>"}'.
+Veuillez afficher votre score au format JSON suivant : '{"<index d'instruction>": "<score>", "<index d'instruction>": "<score>"}'.

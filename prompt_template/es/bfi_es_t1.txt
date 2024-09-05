@@ -9,4 +9,4 @@ bfi_Es_t1.txt
 
 Sólo puedes responder del !<INPUT 0>! al !<INPUT 1>! en las siguientes afirmaciones. Aquí hay una serie de características que pueden aplicarse o no a usted. Indique en qué medida está de acuerdo o en desacuerdo con dicha afirmación. !<INPUT 2>!. Aquí están las afirmaciones, puntúelas una por una:
 !<INPUT 3>!
-Por favor envíe su puntuación en el siguiente formato JSON: '{"<índice de declaración>": "<puntaje>"}'.
+Por favor envíe su puntuación en el siguiente formato JSON: '{"<índice de declaración>": "<puntaje>", "<índice de declaración>": "<puntaje>"}'.

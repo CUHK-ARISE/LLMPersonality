@@ -10,4 +10,4 @@ bfi_En_t2.txt
 Now I will briefly describe some people. Please read each description and tell me how much each person is like you. Write your response using the following scale: !<INPUT 2>!.
 Please answer the statement, even if you are not completely sure of your response.
 !<INPUT 3>!
-Please output your score in the following JSON format: '{"<statement index>": "<score>"}'.
+Please output your score in the following JSON format: '{"<statement index>": "<score>", "<statement index>": "<score>"}'.

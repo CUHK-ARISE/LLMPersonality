@@ -10,4 +10,4 @@ bfi_It_t3.txt
 Date le seguenti dichiarazioni da parte tua:
 !<INPUT 3>!
 Scegli tra le seguenti opzioni per identificare quanto accuratamente questa affermazione ti descrive. !<INPUT 2>!.
-Emetti il tuo punteggio nel seguente formato JSON: '{"<indice istruzione>": "<punteggio>"}'.
+Emetti il tuo punteggio nel seguente formato JSON: '{"<indice istruzione>": "<punteggio>", "<indice istruzione>": "<punteggio>"}'.

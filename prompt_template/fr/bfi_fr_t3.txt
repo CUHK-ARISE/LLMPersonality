@@ -10,4 +10,4 @@ bfi_Fr_t3.txt
 Compte tenu des déclarations suivantes de votre part :
 !<INPUT 3>!
 Veuillez choisir parmi les options suivantes pour déterminer avec quelle précision cette déclaration vous décrit. !<INPUT 2>!.
-Veuillez afficher votre score au format JSON suivant : '{"<index d'instruction>": "<score>"}'.
+Veuillez afficher votre score au format JSON suivant : '{"<index d'instruction>": "<score>", "<index d'instruction>": "<score>"}'.

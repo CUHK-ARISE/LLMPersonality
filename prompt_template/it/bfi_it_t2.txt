@@ -10,4 +10,4 @@ bfi_It_t2.txt
 Ora descriverò brevemente alcune persone. Per favore leggi ogni descrizione e dimmi quanto ogni persona è come te. Scrivi la tua risposta utilizzando la seguente scala: !<INPUT 2>!.
 Per favore rispondi all'affermazione, anche se non sei completamente sicuro della tua risposta.
 !<INPUT 3>!
-Emetti il tuo punteggio nel seguente formato JSON: '{"<indice istruzione>": "<punteggio>"}'.
+Emetti il tuo punteggio nel seguente formato JSON: '{"<indice istruzione>": "<punteggio>", "<indice istruzione>": "<punteggio>"}'.

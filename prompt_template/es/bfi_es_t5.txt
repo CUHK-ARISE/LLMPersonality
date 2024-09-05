@@ -9,4 +9,4 @@ bfi_Es_t5.txt
 
 Aquí hay una serie de características que pueden aplicarse o no a usted. Califique su grado de acuerdo en una escala de !<INPUT 0>! a !<INPUT 1>!. !<INPUT 2>!. Aquí están las afirmaciones, puntúalas una por una:
 !<INPUT 3>!
-Por favor envíe su puntuación en el siguiente formato JSON: '{"<índice de declaración>": "<puntaje>"}'.
+Por favor envíe su puntuación en el siguiente formato JSON: '{"<índice de declaración>": "<puntaje>", "<índice de declaración>": "<puntaje>"}'.

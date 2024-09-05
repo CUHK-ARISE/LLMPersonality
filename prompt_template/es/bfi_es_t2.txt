@@ -10,4 +10,4 @@ bfi_Es_t2.txt
 Ahora describiré brevemente a algunas personas. Por favor lee cada descripción y dime en qué se parece cada persona a ti. Escribe tu respuesta utilizando la siguiente escala: !<INPUT 2>!.
 Por favor responda la afirmación, incluso si no está completamente seguro de su respuesta.
 !<INPUT 3>!
-Por favor envíe su puntuación en el siguiente formato JSON: '{"<índice de declaración>": "<puntaje>"}'.
+Por favor envíe su puntuación en el siguiente formato JSON: '{"<índice de declaración>": "<puntaje>", "<índice de declaración>": "<puntaje>"}'.

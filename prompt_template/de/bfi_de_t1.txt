@@ -9,4 +9,4 @@ bfi_De_t1.txt
 
 In den folgenden Aussagen können Sie nur eine Antwort von !<INPUT 0>! bis !<INPUT 1>! geben. Hier sind eine Reihe von Merkmalen aufgeführt, die möglicherweise auf Sie zutreffen oder auch nicht. Bitte geben Sie an, inwieweit Sie dieser Aussage zustimmen oder nicht. !<INPUT 2>!. Hier sind die Aussagen, bitte bewerten Sie sie einzeln:
 !<INPUT 3>!
-Bitte geben Sie Ihre Punktzahl im folgenden JSON-Format aus: '{"<Anweisungsindex>": "<Punktzahl>"}'.
+Bitte geben Sie Ihre Punktzahl im folgenden JSON-Format aus: '{"<Anweisungsindex>": "<Punktzahl>", "<Anweisungsindex>": "<Punktzahl>"}'.

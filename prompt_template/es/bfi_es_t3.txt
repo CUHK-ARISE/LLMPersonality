@@ -10,4 +10,4 @@ bfi_Es_t3.txt
 Teniendo en cuenta las siguientes declaraciones suyas:
 !<INPUT 3>!
 Elija entre las siguientes opciones para identificar con qué precisión lo describe esta declaración. !<INPUT 2>!.
-Por favor envíe su puntuación en el siguiente formato JSON: '{"<índice de declaración>": "<puntaje>"}'.
+Por favor envíe su puntuación en el siguiente formato JSON: '{"<índice de declaración>": "<puntaje>", "<índice de declaración>": "<puntaje>"}'.

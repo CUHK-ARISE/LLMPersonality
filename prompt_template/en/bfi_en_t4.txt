@@ -9,4 +9,4 @@ bfi_En_t4.txt
 
 Here are a number of characteristics that may or may not apply to you. Please rate your level of agreement on a scale from !<INPUT 0>! to !<INPUT 1>!. !<INPUT 2>!. Here are the statements, score them one by one:
 !<INPUT 3>!
-Please output your score in the following JSON format: '{"<statement index>": "<score>"}'.
+Please output your score in the following JSON format: '{"<statement index>": "<score>", "<statement index>": "<score>"}'.

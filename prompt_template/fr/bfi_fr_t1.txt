@@ -7,6 +7,6 @@ bfi_Fr_t1.txt
 
 <commentblockmarker>###</commentblockmarker>
 
-Vous ne pouvez répondre que de !<INPUT 0>! à !<INPUT 1>! dans les affirmations suivantes. Voici un certain nombre de caractéristiques qui peuvent ou non s’appliquer à vous. Veuillez indiquer dans quelle mesure vous êtes d'accord ou en désaccord avec cette affirmation. !<INPUT 2>!. Voici les énoncés, notez-les un par un :
+Vous ne pouvez répondre qu'avec des valeurs comprises entre !<INPUT 0>! et !<INPUT 1>! dans les énoncés suivants. Voici un certain nombre de caractéristiques qui peuvent ou non s'appliquer à vous. Veuillez indiquer dans quelle mesure vous êtes d'accord ou non avec cet énoncé. !<INPUT 2>!. Voici les énoncés :
 !<INPUT 3>!
-Veuillez afficher votre score au format JSON suivant : '{"<index d'instruction>": "<score>"}'.
+Veuillez afficher votre score au format JSON suivant : '{"<index d'instruction>": "<score>", "<index d'instruction>": "<score>"}'.

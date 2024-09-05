@@ -9,4 +9,4 @@ bfi_It_t5.txt
 
 Ecco una serie di caratteristiche che potrebbero applicarsi o meno a te. Per favore valuta quanto sei d'accordo su una scala da !<INPUT 0>! a !<INPUT 1>!. !<INPUT 2>!. Ecco le affermazioni, segnale una per una:
 !<INPUT 3>!
-Emetti il tuo punteggio nel seguente formato JSON: '{"<indice istruzione>": "<punteggio>"}'.
+Emetti il tuo punteggio nel seguente formato JSON: '{"<indice istruzione>": "<punteggio>", "<indice istruzione>": "<punteggio>"}'.

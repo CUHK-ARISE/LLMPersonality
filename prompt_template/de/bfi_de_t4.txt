@@ -9,4 +9,4 @@ bfi_De_t4.txt
 
 Hier sind eine Reihe von Merkmalen aufgeführt, die möglicherweise auf Sie zutreffen oder auch nicht. Bitte bewerten Sie den Grad Ihrer Zustimmung auf einer Skala von !<INPUT 0>! bis !<INPUT 1>!. !<INPUT 2>!. Hier sind die Aussagen, bewerten Sie sie einzeln:
 !<INPUT 3>!
-Bitte geben Sie Ihre Punktzahl im folgenden JSON-Format aus: '{"<Anweisungsindex>": "<Punktzahl>"}'.
+Bitte geben Sie Ihre Punktzahl im folgenden JSON-Format aus: '{"<Anweisungsindex>": "<Punktzahl>", "<Anweisungsindex>": "<Punktzahl>"}'.

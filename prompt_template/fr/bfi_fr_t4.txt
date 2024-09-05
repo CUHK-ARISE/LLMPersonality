@@ -9,4 +9,4 @@ bfi_Fr_t4.txt
 
 Voici un certain nombre de caractéristiques qui peuvent ou non s'appliquer à vous. Veuillez évaluer votre niveau d'accord sur une échelle de !<INPUT 0>! à !<INPUT 1>!. !<INPUT 2>!. Voici les énoncés, notez-les un par un :
 !<INPUT 3>!
-Veuillez afficher votre score au format JSON suivant : '{"<index d'instruction>": "<score>"}'.
+Veuillez afficher votre score au format JSON suivant : '{"<index d'instruction>": "<score>", "<index d'instruction>": "<score>"}'.
