@@ -1,3 +1,4 @@
+import re
 import json
 
 # Convert number to specified label
@@ -116,3 +117,12 @@ def add_statement(qname, language, statements):
     
     with open('dataset/questionnaires.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
+
+
+def extract_json_str(input_string):
+    json_match = re.search(r'\{.*\}', input_string, flags=re.DOTALL)
+    if json_match:
+        json_content = json_match.group(0)
+        return json_content
+    else:
+        return input_string

@@ -60,7 +60,7 @@ def rephrase(questionnaire_name, language, savename=None):
                 {"role": "user", "content": prompt}
             ]
             try:
-                response = chat('gpt-4', inputs).strip()
+                response = gpt_chat('gpt-4', inputs).strip()
                 parsered_responses = json.loads(response)
                 parsered_responses = parsered_responses["sentence"]
                 break
@@ -149,22 +149,38 @@ class Server:
     def start_request(self, scale_details, level_description, statement_description, questions, language, template, label, order, version):
         responses = list()
         _, scale_max, symbol_min, symbol_max = scale_details
-        inputs = [{"role": "system", "content": questions["system_prompt"]}]
+        
+        if model.startswith("gemini"):
+            inputs = [{"role": "user", "parts": [questions["system_prompt"]]}]
+        else:
+            inputs = [{"role": "system", "content": questions["system_prompt"]}]
+        
         for statement_str in statement_description:
             # Construct the prompt from prompt_template
             prompt = get_prompt(f'prompt_template/{language}/{self.questionnaire_name}_{language}_{template}.txt', 
                                 [symbol_min, symbol_max, level_description, statement_str])
-            inputs.append({"role": "user", "content": prompt})
+
+            if model.startswith("gemini"):
+                inputs.append({"role": "user", "parts": [prompt]})
+            else:
+                inputs.append({"role": "user", "content": prompt})
+
             try:
-                gpt_responses = gpt_request(self.model, inputs)
+                gpt_responses = llm_request(self.model, inputs)
                 parsed_responses = json.loads(gpt_responses)
                 parsed_responses = [convert_symbol(label, value) for value in parsed_responses.values()]
                 if order == 'r':
                     parsed_responses = [scale_max-score+1 for score in parsed_responses]
-            except ValueError:
+            
+            except:
                 return None
             responses += parsed_responses
-            inputs.append({"role": "assistant", "content": gpt_responses})
+            
+            if model.startswith("gemini"):
+                inputs.append({"role": "model", "parts": [gpt_responses]})
+            else:
+                inputs.append({"role": "assistant", "content": gpt_responses})
+            
         return responses
     
     """
