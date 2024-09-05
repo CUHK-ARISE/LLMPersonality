@@ -1,0 +1,226 @@
+[
+    {
+        "Openness": 1,
+        "Conscientiousness": 1,
+        "Extraversion": 1,
+        "Agreeableness": 1,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 1,
+        "Extraversion": 1,
+        "Agreeableness": 1,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 1,
+        "Extraversion": 1,
+        "Agreeableness": 5,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 1,
+        "Extraversion": 1,
+        "Agreeableness": 5,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 1,
+        "Extraversion": 5,
+        "Agreeableness": 1,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 1,
+        "Extraversion": 5,
+        "Agreeableness": 1,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 1,
+        "Extraversion": 5,
+        "Agreeableness": 5,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 1,
+        "Extraversion": 5,
+        "Agreeableness": 5,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 5,
+        "Extraversion": 1,
+        "Agreeableness": 1,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 5,
+        "Extraversion": 1,
+        "Agreeableness": 1,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 5,
+        "Extraversion": 1,
+        "Agreeableness": 5,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 5,
+        "Extraversion": 1,
+        "Agreeableness": 5,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 5,
+        "Extraversion": 5,
+        "Agreeableness": 1,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 5,
+        "Extraversion": 5,
+        "Agreeableness": 1,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 5,
+        "Extraversion": 5,
+        "Agreeableness": 5,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 1,
+        "Conscientiousness": 5,
+        "Extraversion": 5,
+        "Agreeableness": 5,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 1,
+        "Extraversion": 1,
+        "Agreeableness": 1,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 1,
+        "Extraversion": 1,
+        "Agreeableness": 1,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 1,
+        "Extraversion": 1,
+        "Agreeableness": 5,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 1,
+        "Extraversion": 1,
+        "Agreeableness": 5,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 1,
+        "Extraversion": 5,
+        "Agreeableness": 1,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 1,
+        "Extraversion": 5,
+        "Agreeableness": 1,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 1,
+        "Extraversion": 5,
+        "Agreeableness": 5,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 1,
+        "Extraversion": 5,
+        "Agreeableness": 5,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 5,
+        "Extraversion": 1,
+        "Agreeableness": 1,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 5,
+        "Extraversion": 1,
+        "Agreeableness": 1,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 5,
+        "Extraversion": 1,
+        "Agreeableness": 5,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 5,
+        "Extraversion": 1,
+        "Agreeableness": 5,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 5,
+        "Extraversion": 5,
+        "Agreeableness": 1,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 5,
+        "Extraversion": 5,
+        "Agreeableness": 1,
+        "Neuroticism": 5
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 5,
+        "Extraversion": 5,
+        "Agreeableness": 5,
+        "Neuroticism": 1
+    },
+    {
+        "Openness": 5,
+        "Conscientiousness": 5,
+        "Extraversion": 5,
+        "Agreeableness": 5,
+        "Neuroticism": 5
+    }
+]
