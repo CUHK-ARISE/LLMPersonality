@@ -65,15 +65,15 @@ rephrase("<questionnaire_name>", "<specified_language>")
 ## References
 For more details, please refer to [this paper](https://arxiv.org/abs/2305.19926). Please remember to cite us if you find our work helpful in your work!
 ```
-@article{huang2023revisiting,
+@inproceedings{huang2024reliability,
   author    = {Jen{-}tse Huang and
-               Wenxuan Wang and
+               Wenxiang Jiao and
                Man Ho Lam and
                Eric John Li and
-               Wenxiang Jiao and
+               Wenxuan Wang and
                Michael R. Lyu},
-  title     = {Revisiting the Reliability of Psychological Scales on Large Language Models},
-  journal   = {arXiv preprint arXiv:2305.19926},
-  year      = {2023}
+  title     = {On the Reliability of Psychological Scales on Large Language Models},
+  booktitle = {The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP Main)},
+  year      = {2024}
 }
 ```
