@@ -66,14 +66,10 @@ rephrase("<questionnaire_name>", "<specified_language>")
 For more details, please refer to [this paper](https://arxiv.org/abs/2305.19926). Please remember to cite us if you find our work helpful in your work!
 ```
 @inproceedings{huang2024reliability,
-  author    = {Jen{-}tse Huang and
-               Wenxiang Jiao and
-               Man Ho Lam and
-               Eric John Li and
-               Wenxuan Wang and
-               Michael R. Lyu},
-  title     = {On the Reliability of Psychological Scales on Large Language Models},
-  booktitle = {The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP Main)},
-  year      = {2024}
+  title={On the reliability of psychological scales on large language models},
+  author={Huang, Jen-tse and Jiao, Wenxiang and Lam, Man Ho and Li, Eric John and Wang, Wenxuan and Lyu, Michael},
+  booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  pages={6152--6173},
+  year={2024}
 }
 ```
